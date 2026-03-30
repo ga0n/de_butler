@@ -1,0 +1,69 @@
+/* 기본 설정: 모든 요소의 여백 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 네비게이션 바: 로고와 메뉴 정렬 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2ac1bc; /* 배민 민트색 */
+}
+
+/* 카드 뉴스 섹션 레이아웃 */
+.container {
+  display: flex;
+  flex-wrap: wrap; /* 화면이 좁아지면 카드가 아래로 내려감 */
+  justify-content: center;
+  gap: 20px; /* 카드 사이 간격 */
+  padding: 50px;
+}
+
+/* 개별 카드 디자인 */
+.card {
+  width: 300px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  overflow: hidden; /* 이미지가 튀어나오지 않게 함 */
+  transition: transform 0.3s; /* 마우스 올렸을 때 부드러운 효과 */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* 위로 살짝 올라가는 효과 */
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  background-color: #f4f4f4;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* 하단 푸터 */
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 14px;
+}
